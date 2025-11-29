@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actos Ejecutivos y Tentativa - Resumen Interactivo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+            padding: 30px;
+            background: #f7fafc;
+            border-radius: 15px;
+            border-left: 5px solid #667eea;
+            transition: transform 0.3s ease;
+        }
+        
+        .section:hover {
+            transform: translateX(10px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .section h2 {
+            color: #2d3748;
+            margin-bottom: 20px;
+            font-size: 2em;
+            display: flex;
+            align-items: center;
+        }
+        
+        .section h2::before {
+            content: "📚";
+            margin-right: 15px;
+            font-size: 1.2em;
+        }
+        
+        .important-box {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 5px solid #f59e0b;
+        }
+        
+        .important-box strong {
+            color: #92400e;
+            font-size: 1.1em;
+        }
+        
+        .law-article {
+            background: #dbeafe;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 5px solid #3b82f6;
+        }
+        
+        .law-article h3 {
+            color: #1e40af;
+            margin-bottom: 10px;
+        }
+        
+        .penalty-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .penalty-table thead {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .penalty-table th,
+        .penalty-table td {
+            padding: 15px;
+            text-align: left;
+        }
+        
+        .penalty-table tbody tr:nth-child(even) {
+            background: #f7fafc;
+        }
+        
+        .penalty-table tbody tr:hover {
+            background: #e2e8f0;
+            transition: background 0.3s ease;
+        }
+        
+        .example-box {
+            background: #d1fae5;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 5px solid #10b981;
+        }
+        
+        .example-box::before {
+            content: "💡 Ejemplo:";
+            display: block;
+            font-weight: bold;
+            color: #065f46;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        
+        ul, ol {
+            margin-left: 30px;
+            margin-top: 15px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+            padding-left: 10px;
+        }
+        
+        .highlight {
+            background: #fef3c7;
+            padding: 2px 8px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎯 Actos Ejecutivos y Tentativa</h1>
+            <p>Derecho Penal II - Resumen Interactivo</p>
+        </header>
+        
+        <div class="content">
+            <!-- GENERALIDADES -->
+            <div class="section">
+                <h2>Generalidades de la Tentativa</h2>
+                
+                <div class="important-box">
+                    <strong>¿Qué es la tentativa?</strong>
+                    <p>Es cuando el autor <span class="highlight">traspasa la frontera de los actos preparatorios</span> e inicia la fase ejecutiva del delito, pero <span class="highlight">NO realiza todos los actos necesarios</span> para completarlo.</p>
+                </div>
+                
+                <h3 style="color: #2d3748; margin-top: 30px;">🔍 Diferencia clave: Tentativa vs Frustración</h3>
+                
+                <table class="penalty-table">
+                    <thead>
+                        <tr>
+                            <th>TENTATIVA</th>
+                            <th>FRUSTRACIÓN</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>❌ <strong>NO</strong> se realizaron todos los actos de ejecución</td>
+                            <td>✅ <strong>SÍ</strong> se realizaron todos los actos de ejecución</td>
+                        </tr>
+                        <tr>
+                            <td>El autor todavía le falta hacer cosas</td>
+                            <td>El autor ya hizo todo, pero no se logró el resultado</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div class="example-box">
+                    <strong>TENTATIVA:</strong> Juan saca su pistola, apunta a Pedro, pero la policía lo detiene antes de disparar.<br><br>
+                    <strong>FRUSTRACIÓN:</strong> Juan dispara a Pedro con intención de matarlo, pero los médicos lo salvan.
+                </div>
+            </div>
+
+            <!-- REGULACIÓN LEGAL -->
+            <div class="section">
+                <h2>Marco Legal</h2>
+                
+                <div class="law-article">
+                    <h3>📖 Artículo 7 inciso 3° del Código Penal</h3>
+                    <p>"Hay tentativa cuando el culpable <span class="highlight">da principio a la ejecución</span> del crimen o simple delito <span class="highlight">por hechos directos</span>, pero <span class="highlight">falta uno o más para su complemento</span>."</p>
+                </div>
+                
+                <div class="law-article">
+                    <h3>📖 Artículo 9 del Código Penal</h3>
+                    <p>"Las <span class="highlight">faltas sólo se castigan cuando han sido consumadas</span>."</p>
+                    <p style="margin-top: 10px; color: #1e40af; font-weight: bold;">⚠️ NO existe tentativa de faltas</p>
+                </div>
+            </div><!-- ÁMBITO DE APLICACIÓN -->
+            <div class="section">
+                <h2>Ámbito de Aplicación</h2>
+                
+                <div class="important-box">
+                    <strong>⚖️ La tentativa se aplica SOLO a:</strong>
+                    <ul>
+                        <li><strong>CRÍMENES:</strong> Delitos cuya pena es superior a 5 años de presidio</li>
+                        <li><strong>SIMPLES DELITOS:</strong> Delitos cuya pena es superior a 60 días, pero inferior a 5 años y un día de presidio</li>
+                    </ul>
+                    <p style="margin-top: 15px; color: #dc2626; font-weight: bold;">❌ NO se aplica a las FALTAS</p>
+                </div>
+            </div>
+
+            <!-- PENALIDAD -->
+            <div class="section">
+                <h2>Sistema de Penalidad</h2>
+                
+                <h3 style="color: #2d3748; margin-bottom: 20px;">📋 Artículos relevantes:</h3>
+                
+                <div class="law-article">
+                    <p><strong>Art. 52:</strong> A los autores de tentativa de crimen o simple delito, se impondrá la pena <span class="highlight">inferior en 2 grados</span> a la que señala la ley para el crimen o simple delito.</p>
+                </div>
+                
+                <div class="law-article">
+                    <p><strong>Art. 53:</strong> A los cómplices de tentativa de crimen o simple delito se impondrá la pena <span class="highlight">inferior en 3 grados</span> a la que señala la ley para el crimen o simple delito.</p>
+                </div>
+                
+                <div class="law-article">
+                    <p><strong>Art. 54:</strong> A los encubridores de tentativa de crimen o simple delito, se impondrá la pena <span class="highlight">inferior en 4 grados</span> a la señalada para el crimen o simple delito.</p>
+                </div>
+                
+                <div class="law-article">
+                    <p><strong>Art. 55:</strong> Las disposiciones generales contenidas en los artículo precedentes <span class="highlight">NO tienen lugar</span> en los casos en que la tentativa se halle especialmente penada por la ley.</p>
+                    <div class="example-box" style="margin-top: 15px;">
+                        Ejemplo: robo con violencia (art. 450)
+                    </div>
+                </div>
+                
+                <h3 style="color: #2d3748; margin-top: 40px; margin-bottom: 20px;">📊 Resumen de Penalidades</h3>
+                
+                <table class="penalty-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 40%;">TIPO DE PARTICIPACIÓN</th>
+                            <th style="width: 60%;">PENALIDAD</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Autores</strong> de tentativa</td>
+                            <td>Pena inferior en <span class="highlight">2 grados</span> a la que señala la ley</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Cómplices</strong> de tentativa</td>
+                            <td>Pena inferior en <span class="highlight">3 grados</span> a la que señala la ley</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Encubridores</strong> de tentativa</td>
+                            <td>Pena inferior en <span class="highlight">4 grados</span> a la señalada en la ley</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div class="example-box">
+                    <strong>Ejemplo práctico:</strong><br>
+                    Si el delito consumado tiene pena de 5 años:<br>
+                    • <strong>Autor de tentativa:</strong> 2 grados menos<br>
+                    • <strong>Cómplice de tentativa:</strong> 3 grados menos<br>
+                    • <strong>Encubridor de tentativa:</strong> 4 grados menos
+                </div>
+            </div>
+
+            <!-- ELEMENTOS DEL TIPO DE TENTATIVA -->
+            <div class="section">
+                <h2>Estructura Típica de la Tentativa</h2>
+                
+                <div class="important-box">
+                    <strong>🎯 La tentativa tiene DOS elementos fundamentales:</strong>
+                </div>
+                
+                <table class="penalty-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 50%;">TIPO OBJETIVO</th>
+                            <th style="width: 50%;">TIPO SUBJETIVO</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <strong>Conducta típica:</strong>
+                                <ul style="margin-top: 10px;">
+                                    <li>Dar principio a la ejecución de un crimen o simple delito por <span class="highlight">hechos directos</span></li>
+                                    <li>Que <span class="highlight">falten uno o más hechos</span> para su complemento</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <strong>Dolo</strong>
+                                <p style="margin-top: 10px;">El autor debe tener conocimiento y voluntad de realizar el delito</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- CONDUCTA TÍPICA -->
+            <div class="section">
+                <h2>La Conducta Típica en Detalle</h2>
+                
+                <h3 style="color: #2d3748; margin-bottom: 20px;">🔍 ¿Qué significa "dar principio a la ejecución por hechos directos"?</h3>
+                
+                <div class="important-box">
+                    <strong>Problema fundamental:</strong>
+                    <p>El comienzo de ejecución requiere <span class="highlight">traspasar la frontera entre los actos preparatorios y los ejecutivos</span>.</p>
+                    <p style="margin-top: 10px;">⚠️ Esta distinción es compleja y existen varias teorías para resolverla</p>
+                </div>
+            </div><!-- TEORÍAS -->
+            <div class="section">
+                <h2>Teorías sobre el Inicio de la Ejecución</h2>
+                
+                <div style="background: #fff; padding: 20px; border-radius: 10px; margin: 20px 0; border: 3px solid #667eea;">
+                    <h3 style="color: #667eea;">📚 Existen 4 teorías principales:</h3>
+                    <ol style="font-size: 1.1em; color: #2d3748; margin-top: 15px;">
+                        <li>Teoría Subjetiva</li>
+                        <li>Teoría Objetivo-Formal</li>
+                        <li>Teoría Objetivo-Material (⭐ DOMINANTE EN CHILE)</li>
+                        <li>Teoría de Conmoción Social</li>
+                    </ol>
+                </div>
+
+                <!-- TEORÍA SUBJETIVA -->
+                <div style="background: #fef3c7; padding: 25px; border-radius: 10px; margin: 30px 0; border-left: 5px solid #f59e0b;">
+                    <h3 style="color: #92400e; margin-bottom: 15px;">1️⃣ Teoría Subjetiva</h3>
+                    
+                    <p><strong>Idea central:</strong> Diferencia entre actos preparatorios y ejecutivos según el <span class="highlight">plan del autor</span></p>
+                    
+                    <div style="background: white; padding: 15px; border-radius: 8px; margin: 15px 0;">
+                        <p><strong>Según esta teoría:</strong></p>
+                        <p style="margin-top: 10px;">Los <strong>actos ejecutivos</strong> son los que para el sujeto constituyen la fase decisiva de su plan.</p>
+                    </div>
+                    
+                    <div class="example-box">
+                        Para saber cuándo comenzó la ejecución del homicidio hay que considerar si el sujeto persigue matar con arma blanca, con una pistola o con veneno.
+                    </div>
+                    
+                    <div style="background: #fee2e2; padding: 15px; border-radius: 8px; margin-top: 15px; border-left: 3px solid #dc2626;">
+                        <strong style="color: #dc2626;">❌ PROBLEMAS:</strong>
+                        <ul style="margin-top: 10px;">
+                            <li>La determinación del momento de ejecución NO puede depender del autor, sino de la <strong>ley</strong></li>
+                            <li>Es incompatible con el carácter objetivo de la expresión "dar principio a la ejecución por hechos directos" del art. 7° CP</li>
+                        </ul>
+                    </div>
+                    
+                    <h4 style="color: #92400e; margin-top: 20px;">Variante: Teoría del dolus ex re y de la univocidad</h4>
+                    <p>La tentativa comienza con actos que <strong>revelan suficientemente</strong> el propósito delictivo del autor.</p>
+                    
+                    <div style="background: #fee2e2; padding: 15px; border-radius: 8px; margin-top: 15px; border-left: 3px solid #dc2626;">
+                        <strong style="color: #dc2626;">❌ PROBLEMA:</strong>
+                        <p style="margin-top: 10px;">Ampliación excesiva de la tentativa</p>
+                        <div class="example-box" style="margin-top: 10px;">
+                            Comprar una pistola para matar al enemigo <strong>NO es tentativa</strong> de homicidio, aunque según el plan del autor exista principio de ejecución. El peligro para el bien jurídico vida está muy lejano. Es un acto preparatorio impune.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TEORÍA OBJETIVO-FORMAL -->
+                <div style="background: #dbeafe; padding: 25px; border-radius: 10px; margin: 30px 0; border-left: 5px solid #3b82f6;">
+                    <h3 style="color: #1e40af; margin-bottom: 15px;">2️⃣ Teoría Objetivo-Formal</h3>
+                    
+                    <p><strong>Idea central:</strong> La tentativa comienza con el inicio de la <span class="highlight">conducta descrita en el tipo</span> en sentido estricto.</p>
+                    
+                    <div class="example-box">
+                        En el homicidio la tentativa comenzaría cuando el sujeto empieza a <strong>"matar"</strong>, verbo empleado en el art. 391 del CP.
+                    </div>
+                    
+                    <div style="background: white; padding: 15px; border-radius: 8px; margin: 15px 0;">
+                        <p><strong>Ejemplos según esta teoría:</strong></p>
+                        <ul style="margin-top: 10px;">
+                            <li>Quien clava el puñal en el corazón</li>
+                            <li>Quien toma el dinero de la caja</li>
+                            <li>Quien sujeta a la mujer mientras otro la accede carnalmente</li>
+                        </ul>
+                    </div>
+                    
+                    <div style="background: #d1fae5; padding: 15px; border-radius: 8px; margin-top: 15px; border-left: 3px solid #10b981;">
+                        <strong style="color: #065f46;">✅ VENTAJA:</strong>
+                        <p style="margin-top: 10px;">Respeta el principio de legalidad</p>
+                    </div>
+                    
+                    <div style="background: #fee2e2; padding: 15px; border-radius: 8px; margin-top: 15px; border-left: 3px solid #dc2626;">
+                        <strong style="color: #dc2626;">❌ PROBLEMAS:</strong>
+                        <ul style="margin-top: 10px;">
+                            <li><strong>Es una tautología:</strong> acudir al comienzo de la conducta típica para resolver desde cuándo hay ejecución es circular, porque eso es justamente lo que se quiere decidir</li>
+                            <li>¿Cuándo comienza la conducta típica homicida? ¿Al sacar la pistola, al apuntar o al apretar el gatillo?</li>
+                            <li>En delitos de resultado y medios abiertos como el homicidio, se "mata" cuando se produce la muerte, por lo que no cabría la tentativa</li>
+                            <li>El verbo "matar" no se puede realizar parcialmente: se mata o no se mata</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- TEORÍA OBJETIVO-MATERIAL -->
+                <div style="background: #d1fae5; padding: 25px; border-radius: 10px; margin: 30px 0; border-left: 5px solid #10b981; box-shadow: 0 10px 30px rgba(16, 185, 129, 0.3);">
+                    <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                        <h3 style="color: #065f46; margin: 0;">3️⃣ Teoría Objetivo-Material</h3>
+                        <span style="background: #10b981; color: white; padding: 5px 15px; border-radius: 20px; margin-left: 15px; font-weight: bold;">⭐ DOMINANTE EN CHILE</span>
+                    </div>
+                    
+                    <div style="background: white; padding: 20px; border-radius: 8px; margin: 15px 0; border: 2px solid #10b981;">
+                        <p><strong style="font-size: 1.2em; color: #065f46;">Idea central:</strong></p>
+                        <p style="margin-top: 10px; font-size: 1.1em;">Hay principio de ejecución cuando:</p>
+                        <ul style="margin-top: 10px; color: #065f46; font-weight: bold;">
+                            <li>La realización del plan del autor representa, para un <span class="highlight">tercero imparcial</span>, un <span class="highlight">peligro</span> para un bien jurídico concreto</li>
+                            <li>Ejecutado mediante <span class="highlight">hechos directos u objetivamente idóneos</span> para provocar el resultado típico</li>
+                        </ul>
+                    </div>
+                    
+                    <div style="background: #fef3c7; padding: 15px; border-radius: 8px; margin: 15px 0;">
+                        <p><strong>⚖️ Equilibrio entre teorías:</strong></p>
+                        <ul style="margin-top: 10px;">
+                            <li>NO es necesaria la realización de algún "elemento del tipo legal" (modelo objetivo-formal)</li>
+                            <li>Tampoco es suficiente la "representación del autor" (modelo subjetivo)</li>
+                        </ul>
+                    </div>
+                    
+                    <h4 style="color: #065f46; margin-top: 25px; font-size: 1.2em;">📏 Criterios objetivos de valoración del plan del autor:</h4>
+                    
+                    <div style="background: white; padding: 20px; border-radius: 8px; margin: 15px 0;">
+                        <h5 style="color: #10b981; margin-bottom: 10px;">🎯 1. La puesta en peligro inmediata:</h5>
+                        <p>La tentativa comienza cuando se produce una <strong>inmediata puesta en peligro</strong> del bien jurídico.</p>
+                    </div>
+                    
+                    <div style="background: white; padding: 20px; border-radius: 8px; margin: 15px 0;">
+                        <h5 style="color: #10b981; margin-bottom: 10px;">⏰ 2. La inmediatez temporal:</h5>
+                        <p><strong>Si el tipo describe una sola conducta:</strong></p>
+                        <p style="margin-top: 10px;">La tentativa comienza cuando se efectúa un acto <strong>inmediatamente anterior</strong> a la plena realización de la conducta típica.</p>
+                        <div class="example-box" style="margin-top: 15px;">
+                            En el homicidio: la conducta anterior a la de matar<br>
+                            Por ejemplo: <strong>apuntar</strong> a la víctima con un arma de fuego o <strong>acercarse</strong> con el arma cargada en las manos
+                        </div>
+                        
+                        <p style="margin-top: 20px;"><strong>En tipos que describen varios actos:</strong></p>
+                        <p style="margin-top: 10px;">Cuando se efectúa un acto inmediatamente anterior a <strong>alguno</strong> de los descritos en el tipo.</p>
+                        <div class="example-box" style="margin-top: 15px;">
+                            En el robo con intimidación: cuando comienza la intimidación, aunque aún no se haya sustraído nada
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TEORÍA DE CONMOCIÓN SOCIAL -->
+                <div style="background: #fce7f3; padding: 25px; border-radius: 10px; margin: 30px 0; border-left: 5px solid #ec4899;">
+                    <h3 style="color: #831843; margin-bottom: 15px;">4️⃣ Teoría de Conmoción Social (Roxin, Jescheck, Hirsh)</h3>
+                    
+                    <p><strong>Idea central:</strong> Existe tentativa desde que el acto <span class="highlight">conmueve a la colectividad</span> o afecta el sentimiento de seguridad jurídica.</p>
+                    
+                    <div style="background: #fee2e2; padding: 15px; border-radius: 8px; margin-top: 15px; border-left: 3px solid #dc2626;">
+                        <strong style="color: #dc2626;">❌ CRÍTICA (Zaffaroni):</strong>
+                        <p style="margin-top: 10px;">Convierte en bien jurídico la <strong>seguridad jurídica</strong></p>
+                    </div>
+                    
+                    <div style="background: white; padding: 15px; border-radius: 8px; margin-top: 15px;">
+                        <strong>Consecuencias de esta teoría:</strong>
+                        <ul style="margin-top: 10px;">
+                            <li>❌ Castiga como tentativa actos preparatorios que provocan conmoción social</li>
+                            <li>⚖️ La tentativa se castiga menos que la consumación, pero la atenuación es facultativa</li>
+                            <li>⚠️ La tentativa inidónea es punible, si provoca conmoción social</li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!-- SEGUNDO ELEMENTO -->
+            <div class="section">
+                <h2>Segundo Elemento del Tipo Objetivo</h2>
+                
+                <div class="important-box">
+                    <strong>Que falten uno o más hechos para su complemento</strong>
+                    <p style="margin-top: 10px;">No se han llevado a cabo <span class="highlight">todos los actos que objetivamente</span> conducirían a la realización del tipo legal.</p>
+                    <p style="margin-top: 10px; color: #dc2626; font-weight: bold;">⚠️ Con independencia de:</p>
+                    <ul>
+                        <li>La representación del autor</li>
+                        <li>Sus posibilidades de actuación</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- TIPO SUBJETIVO -->
+            <div class="section">
+                <h2>Tipo Subjetivo: El Dolo</h2>
+                
+                <div class="important-box">
+                    <strong>🎯 El dolo en la tentativa</strong>
+                    <p style="margin-top: 15px;">Conocimiento <strong>ex ante</strong> del riesgo jurídicamente desaprobado creado con la conducta típica.</p>
+                </div>
+                
+                <div style="background: #dbeafe; padding: 20px; border-radius: 10px; margin: 20px 0;">
+                    <h3 style="color: #1e40af; margin-bottom: 15px;">Características del dolo en tentativa:</h3>
+                    <ul>
+                        <li>El dolo del autor es <span class="highlight">dolo de consumación del delito</span></li>
+                        <li>Si el art. 7 inciso 3° exige que se haya dado principio a la ejecución por actos aptos para crear un riesgo jurídicamente desaprobado...</li>
+                        <li>...desde el punto de vista subjetivo es necesario que <strong>dicho riesgo sea conocido</strong></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- TENTATIVA INIDÓNEA -->
+            <div class="section">
+                <h2>Tentativa Inidónea</h2>
+                
+                <div class="important-box">
+                    <strong>⚠️ Concepto importante:</strong>
+                    <p style="margin-top: 10px;">Es una característica de la <span class="highlight">conducta típica</span></p>
+                    <p style="margin-top: 10px;">Dice relación con la <strong>idoneidad ex ante</strong> de la conducta para lesionar o poner en peligro el bien penalmente tutelado.</p>
+                </div>
+                
+                <div style="background: #fef3c7; padding: 20px; border-radius: 10px; margin: 20px 0; border-left: 5px solid #f59e0b;">
+                    <strong style="color: #92400e;">📌 Aspectos clave:</strong>
+                    <ul style="margin-top: 15px;">
+                        <li>Debe analizarse <strong>EX ANTE</strong></li>
+                        <li>NO depende de si el sujeto alcanzó o no a realizar completamente la conducta</li>
+                        <li>El nombre "tentativa" es equívoco en este contexto</li>
+                    </ul>
+                </div>
+                
+                <h3 style="color: #2d3748; margin: 30px 0 20px 0;">🔍 Tipos de Tentativa Inidónea:</h3>
+                
+                <!-- TENTATIVA ABSOLUTAMENTE INIDÓNEA -->
+                <div style="background: #fee2e2; padding: 25px; border-radius: 10px; margin: 30px 0; border-left: 5px solid #dc2626;">
+                    <h3 style="color: #dc2626; margin-bottom: 20px;">1️⃣ Tentativa ABSOLUTAMENTE Inidónea</h3>
+                    
+                    <div style="background: white; padding: 20px; border-radius: 8px; margin: 15px 0;">
+                        <strong>¿Cuándo concurre?</strong>
+                        <p style="margin-top: 10px;">Mediante un juicio <strong>ex ante</strong>, colocado el juzgador en el momento anterior a la realización de la conducta y tomando en cuenta las circunstancias concretas del hecho, se concluye que:</p>
+                    </div>
+                    
+                    <div style="background: white; padding: 20px; border-radius: 8px; margin: 15px 0;">
+                        <h4 style="color: #dc2626; margin-bottom: 15px;">Tres situaciones:</h4>
+                        
+                        <div style="margin: 20px 0; padding: 15px; background: #fef3c7; border-radius: 8px;">
+                            <strong>a) Falta el objeto material sobre el cual recae la conducta</strong>
+                            <div class="example-box" style="margin-top: 10px;">
+                                A realiza maniobras abortivas respecto de un <strong>feto muerto</strong>
+                            </div>
+                        </div>
+                        
+                        <div style="margin: 20px 0; padding: 15px; background: #fef3c7; border-radius: 8px;">
+                            <strong>b) El medio empleado es absolutamente ineficaz para conseguir el fin buscado</strong>
+                            <div class="example-box" style="margin-top: 10px;">
+                                A administra a B una <strong>sustancia inofensiva</strong> creyéndola venenosa
+                            </div>
+                        </div>
+                        
+                        <div style="margin: 20px 0; padding: 15px; background: #fef3c7; border-radius: 8px;">
+                            <strong>c) Falta en el sujeto activo una característica personal establecida en la ley (delitos especiales)</strong>
+                            <div class="example-box" style="margin-top: 10px;">
+                                Un tercero redacta en su casa una sentencia injusta y contraria a Derecho, <strong>sin ser juez</strong> (prevaricación judicial)
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h4 style="color: #dc2626; margin: 30px 0 15px 0;">⚖️ Efectos de la tentativa absolutamente inidónea</h4>
+                    
+                    <div style="background: #d1fae5; padding: 20px; border-radius: 8px; margin: 15px 0; border-left: 3px solid #10b981;">
+                        <strong style="color: #065f46;">✅ Tesis MAYORITARIA: Es un hecho IMPUNE</strong>
+                        <p style="margin-top: 15px;"><strong>Razones:</strong></p>
+                        <ul style="margin-top: 10px;">
+                            <li>No pone en riesgo bien jurídico alguno</li>
+                            <li>Para que la tentativa sea punible, la conducta típica debe ser <strong>ex ante idónea</strong> para lesionar o poner en riesgo el bien penalmente tutelado</li>
+                            <li>De lo contrario, se estaría castigando la <strong>mera voluntad criminal</strong></li>
+                        </ul>
+                    </div>
+                    
+                    <div style="background: #fef3c7; padding: 20px; border-radius: 8px; margin: 15px 0;">
+                        <strong>Tesis minoritaria (Cury):</strong>
+                        <p style="margin-top: 10px;">Postulaba la punibilidad de la tentativa inidónea, incluida la absolutamente inidónea si, atendidas las circunstancias cognoscibles para un observador razonable:</p>
+                        <ul style="margin-top: 10px;">
+                            <li>Disminuye el respeto del grupo social por los valores elementales</li>
+                            <li>Quebranta la confianza del grupo social en su protección</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- TENTATIVA RELATIVAMENTE INIDÓNEA -->
+                <div style="background: #d1fae5; padding: 25px; border-radius: 10px; margin: 30px 0; border-left: 5px solid #10b981;">
+                    <h3 style="color: #065f46; margin-bottom: 20px;">2️⃣ Tentativa RELATIVAMENTE Inidónea</h3>
+                    
+                    <div style="background: white; padding: 15px; border-radius: 8px; margin: 15px 0; border: 2px solid #10b981;">
+                        <strong style="color: #065f46; font-size: 1.1em;">⚖️ La mayoría opina que ES PUNIBLE</strong>
+                    </div>
+                    
+                    <h4 style="color: #065f46; margin: 30px 0 15px 0;">Según Garrido y Labatut, hay dos casos:</h4>
+                    
+                    <div style="margin: 20px 0; padding: 20px; background: white; border-radius: 8px;">
+                        <strong style="color: #10b981;">1. Los medios usados son aptos, pero NO en el momento de actuar</strong>
+                        <div class="example-box" style="margin-top: 15px;">
+                            <strong>Caso del mayordomo:</strong><br>
+                            El mayordomo quiere matar a B y le da un té con un <strong>potente veneno</strong>, pero B en conocimiento de la situación, había tomado el <strong>antídoto</strong>, por lo que se encontraba protegido.<br><br>
+                            • <strong>Ex post:</strong> No había posibilidad de consumar el hecho<br>
+                            • <strong>Ex ante:</strong> La conducta era apta para lesionar el bien penalmente tutelado<br>
+                            • <strong>Resultado:</strong> ✅ Se castiga a título de tentativa
+                        </div>
+                    </div>
+                    
+                    <div style="margin: 20px 0; padding: 20px; background: white; border-radius: 8px;">
+                        <strong style="color: #10b981;">2. Existe el objeto de la agresión, pero accidentalmente NO se encuentra en el lugar del ataque</strong>
+                        <div class="example-box" style="margin-top: 15px;">
+                            <strong>Caso del lecho vacío:</strong><br>
+                            A quiere matar a B, concurre de noche hasta su lecho y dispara a oscuras en contra de la cama, pero B, alertado de la situación, <strong>acababa de abandonar el lugar</strong>.<br><br>
+• <strong>Resultado:</strong> ✅ Se castiga la conducta típica, en virtud del peligro ex ante a título de tentativa
+</div>
+</div><div style="background: #fef3c7; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 3px solid #f59e0b;">
+                    <strong style="color: #92400e;">Tesis minoritaria (Mera Figueroa):</strong>
+                    <p style="margin-top: 10px;">Si el objeto material del ataque no existe (porque la persona había abandonado el lecho), el delito representado por el autor <strong>nunca pudo consumarse</strong>.</p>
+                    <p style="margin-top: 10px;">El CP exige que se dé principio a la ejecución del delito por <strong>"hechos directos"</strong>: deben ser idóneos para consumar el delito en el caso concreto, considerando las circunstancias reales efectivamente verificadas.</p>
+                </div>
+                
+                <div style="background: #fee2e2; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 3px solid #dc2626;">
+                    <strong style="color: #dc2626;">❌ Crítica a la tesis de Mera:</strong>
+                    <p style="margin-top: 10px;"><strong>¿La conducta en la tentativa inidónea debe analizarse ex post o ex ante?</strong></p>
+                    <p style="margin-top: 10px;">✅ <strong>Ex ante</strong>, porque ex post, <span class="highlight">todas las tentativas son inidóneas</span>.</p>
+                    <p style="margin-top: 10px;">De lo contrario, el delito se habría consumado.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- DELITO PUTATIVO -->
+        <div class="section">
+            <h2>Delito Putativo</h2>
+            
+            <div class="important-box">
+                <strong>📖 Concepto:</strong>
+                <p style="margin-top: 10px;">El autor cree punible una conducta que <span class="highlight">NO está penalmente tipificada</span>.</p>
+            </div>
+            
+            <div class="example-box">
+                Dos mujeres practican lesbianismo suponiendo que es punible (cuando no lo es)
+            </div>
+            
+            <div style="background: #d1fae5; padding: 20px; border-radius: 10px; margin: 20px 0; border-left: 5px solid #10b981;">
+                <h3 style="color: #065f46;">Tratamiento: ES IMPUNE</h3>
+                <p style="margin-top: 15px;"><strong>Razones:</strong></p>
+                <ul style="margin-top: 10px;">
+                    <li>✅ El delito es <strong>inexistente</strong></li>
+                    <li>✅ No pone en riesgo un bien jurídico</li>
+                    <li>✅ El hecho es <strong>atípico</strong> y no se puede sancionar, conforme al <span class="highlight">principio de legalidad</span></li>
+                </ul>
+            </div>
+        </div># PARTE 5: Iter Criminis, Frustración y Delito Consumado
+```html
+            <!-- ITER CRIMINIS -->
+            <div class="section">
+                <h2>Tipos de Realización Imperfecta</h2>
+                
+                <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 30px; border-radius: 15px; color: white; margin: 30px 0;">
+                    <h3 style="color: white; text-align: center; margin-bottom: 20px; font-size: 1.5em;">📊 ITER CRIMINIS (Itinerario Criminal)</h3>
+                    
+                    <div style="background: rgba(255,255,255,0.95); padding: 25px; border-radius: 10px; color: #2d3748;">
+                        <table style="width: 100%; border-collapse: separate; border-spacing: 0;">
+                            <thead>
+                                <tr style="background: linear-gradient(135deg, #a78bfa 0%, #8b5cf6 100%); color: white;">
+                                    <th colspan="2" style="padding: 15px; text-align: center; border-radius: 10px 10px 0 0; font-size: 1.1em;">ACTOS PREPARATORIOS</th>
+                                    <th colspan="3" style="padding: 15px; text-align: center; background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%); font-size: 1.1em;">ACTOS EJECUTIVOS</th>
+                                    <th style="padding: 15px; text-align: center; background: linear-gradient(135deg, #34d399 0%, #10b981 100%); border-radius: 0 10px 0 0; font-size: 1.1em;">POST-CONSUMACIÓN</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="padding: 15px; text-align: center; background: #f3e8ff; border-left: 3px solid #8b5cf6; font-weight: bold;">Conspiración</td>
+                                    <td style="padding: 15px; text-align: center; background: #f3e8ff; font-weight: bold;">Proposición</td>
+                                    <td style="padding: 15px; text-align: center; background: #dbeafe; border-left: 3px solid #3b82f6; font-weight: bold;">Tentativa</td>
+                                    <td style="padding: 15px; text-align: center; background: #dbeafe; font-weight: bold;">Frustración</td>
+                                    <td style="padding: 15px; text-align: center; background: #dbeafe; font-weight: bold;">Consumación</td>
+                                    <td style="padding: 15px; text-align: center; background: #d1fae5; border-left: 3px solid #10b981; border-right: 3px solid #10b981; font-weight: bold;">Agotamiento</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="6" style="padding: 20px; text-align: center; background: #fef3c7; border-top: 3px solid #f59e0b;">
+                                        <div style="display: flex; align-items: center; justify-content: center;">
+                                            <span style="font-size: 1.5em; margin-right: 10px;">⚡</span>
+                                            <strong style="color: #92400e; font-size: 1.2em;">PRINCIPIO DE EJECUCIÓN</strong>
+                                            <span style="font-size: 1.5em; margin-left: 10px;">⚡</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <div style="margin-top: 20px; padding: 15px; background: #fef3c7; border-radius: 8px; border-left: 4px solid #f59e0b;">
+                            <strong style="color: #92400e;">📌 Nota importante:</strong>
+                            <p style="margin-top: 10px; color: #78350f;">La línea divisoria entre actos preparatorios y ejecutivos está marcada por el <strong>principio de ejecución</strong>, que es el momento clave para determinar si hay o no tentativa.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FRUSTRACIÓN -->
+            <div class="section">
+                <h2>Delito Frustrado</h2>
+                
+                <div class="law-article">
+                    <h3>📖 Art. 7° inc. 2° del Código Penal</h3>
+                    <p>"Hay crimen o simple delito frustrado cuando el delincuente <span class="highlight">pone de su parte todo lo necesario</span> para que el crimen o simple delito se consume y esto <span class="highlight">NO se verifica por causas independientes de su voluntad</span>."</p>
+                </div>
+                
+                <div class="important-box">
+                    <strong>🎯 Diferencia fundamental con la tentativa:</strong>
+                    <p style="margin-top: 15px;">En el delito frustrado la <span class="highlight">conducta típica está COMPLETA</span></p>
+                    <p style="margin-top: 10px;">Al sujeto <strong>no le resta nada por hacer</strong> y pese a ello el delito no se consuma, por faltar el resultado.</p>
+                </div>
+                
+                <div class="example-box">
+                    <strong>Ejemplo clásico:</strong><br>
+                    Juan dispara a Pedro con intención de matarlo (ya hizo todo lo necesario), pero los médicos logran salvarlo → <strong>FRUSTRACIÓN</strong><br><br>
+                    Si Juan solo hubiera apuntado pero no disparado → Sería <strong>TENTATIVA</strong>
+                </div>
+                
+                <div style="background: #dbeafe; padding: 20px; border-radius: 10px; margin: 20px 0;">
+                    <p><strong>Ámbito de aplicación:</strong></p>
+                    <p style="margin-top: 10px;">Procede únicamente respecto de <span class="highlight">crímenes y simples delitos</span></p>
+                    <p style="margin-top: 10px; color: #dc2626; font-weight: bold;">❌ Art. 9: Las faltas sólo se sancionan cuando han sido consumadas</p>
+                </div>
+                
+                <h3 style="color: #2d3748; margin: 40px 0 20px 0;">⚖️ Penalidad para el delito frustrado</h3>
+                
+                <div class="law-article">
+                    <p><strong>Art. 51:</strong> A los autores de crimen o simple delito frustrado, se impondrá la pena <span class="highlight">inmediatamente inferior en 1 grado</span> a la señalada por la ley para el crimen o simple delito.</p>
+                </div>
+                
+                <div class="law-article">
+                    <p><strong>Art. 52:</strong> A los cómplices de crimen o simple delito frustrado se impondrá la pena <span class="highlight">inferior en 2 grados</span> a la que señala la ley para el crimen o simple delito.</p>
+                </div>
+                
+                <div class="law-article">
+                    <p><strong>Art. 53:</strong> A los encubridores de crimen o simple delito frustrado, se impondrá la pena <span class="highlight">inferior en 3 grados</span> a la que señala la ley para el crimen o simple delito.</p>
+                </div>
+                
+                <div class="law-article">
+                    <p><strong>Art. 55:</strong> Las disposiciones generales contenidas en los cuatro artículos precedentes <span class="highlight">NO tienen lugar</span> en los casos en que el delito frustrado se halle especialmente penado por ley.</p>
+                </div>
+                
+                <table class="penalty-table" style="margin-top: 30px;">
+                    <thead>
+                        <tr>
+                            <th style="width: 40%;">TIPO DE PARTICIPACIÓN</th>
+                            <th style="width: 60%;">PENALIDAD EN FRUSTRACIÓN</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Autores</strong> de frustración</td>
+                            <td>Pena inferior en <span class="highlight">1 grado</span> a la que señala la ley</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Cómplices</strong> de frustración</td>
+                            <td>Pena inferior en <span class="highlight">2 grados</span> a la que señala la ley</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Encubridores</strong> de frustración</td>
+                            <td>Pena inferior en <span class="highlight">3 grados</span> a la señalada en la ley</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h3 style="color: #2d3748; margin: 40px 0 20px 0;">🏗️ Estructura típica del delito frustrado</h3>
+                
+                <table class="penalty-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 50%;">TIPO OBJETIVO</th>
+                            <th style="width: 50%;">TIPO SUBJETIVO</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <strong>Conducta típica:</strong> Realización TOTAL de la conducta típica
+                                <ul style="margin-top: 10px;">
+                                    <li>Que el resultado NO se produzca, por causas <span class="highlight">ajenas a la voluntad del agente</span></li>
+                                </ul>
+                            </td>
+                            <td>
+                                <strong>Dolo</strong>
+                                <p style="margin-top: 10px;">Dolo de consumación del delito</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+```
+
+Continúo con la **PARTE 6 FINAL** en el siguiente mensaje...<!-- TIPO OBJETIVO FRUSTRACIÓN -->
+            <div class="section">
+                <h2>Tipo Objetivo del Delito Frustrado - En Detalle</h2>
+                
+                <h3 style="color: #2d3748; margin-bottom: 20px;">1️⃣ La realización TOTAL de la conducta típica</h3>
+                
+                <div class="important-box">
+                    <strong>⚠️ Requisito fundamental:</strong>
+                    <p style="margin-top: 10px;">El delito frustrado <span class="highlight">SÓLO cabe en los delitos de resultado material</span></p>
+                    <p style="margin-top: 10px;">Son aquellos en que el tipo penal requiere para su consumación, la producción de un resultado separado de los actos de ejecución.</p>
+                </div>
+                
+                <div style="background: #fef3c7; padding: 20px; border-radius: 10px; margin: 20px 0;">
+                    <strong>En cambio, los delitos de mera actividad:</strong>
+                    <p style="margin-top: 10px;">La realización total de la conducta típica implica automáticamente su <strong>consumación</strong></p>
+                    <p style="margin-top: 10px; color: #dc2626; font-weight: bold;">❌ NO admiten frustración</p>
+                </div>
+                
+                <h4 style="color: #667eea; margin: 30px 0 15px 0;">🤔 ¿Cómo se determina cuándo se han llevado a cabo todos los actos ejecutivos?</h4>
+                
+                <div style="background: #fee2e2; padding: 25px; border-radius: 10px; margin: 20px 0; border-left: 5px solid #dc2626;">
+                    <h4 style="color: #dc2626;">❌ TEORÍA SUBJETIVA (Rechazada)</h4>
+                    <p style="margin-top: 15px;">La determinación depende de la <strong>representación del sujeto</strong>.</p>
+                    <p style="margin-top: 10px;">El sujeto ha ejecutado toda la conducta cuando, desde el punto de vista de su representación, con el conocimiento de que dispone en el momento de obrar, ésta se encuentra concluida.</p>
+                    
+                    <div style="background: white; padding: 15px; border-radius: 8px; margin-top: 15px;">
+                        <strong style="color: #dc2626;">Crítica:</strong>
+                        <p style="margin-top: 10px;">Deja entregada la determinación del tipo frustrado al autor y no a la ley.</p>
+                    </div>
+                </div>
+                
+                <div style="background: #d1fae5; padding: 25px; border-radius: 10px; margin: 20px 0; border-left: 5px solid #10b981;">
+                    <h4 style="color: #065f46;">✅ TEORÍA OBJETIVA (Aceptada)</h4>
+                    <p style="margin-top: 15px;">La determinación depende de la <strong>descripción del tipo</strong>.</p>
+                    
+                    <div class="law-article" style="margin-top: 15px;">
+                        <p>"Que el sujeto ponga de su parte todo lo necesario para que el crimen o simple delito se consume" (art. 7 n°2)</p>
+                        <p style="margin-top: 10px;">Exige que la conducta típica se encuentre <span class="highlight">completamente realizada en la actividad objetiva</span>.</p>
+                    </div>
+                    
+                    <div class="example-box" style="margin-top: 20px;">
+                        <strong>Consecuencia importante:</strong><br>
+                        Si el sujeto <strong>CREE</strong> haber realizado completamente la conducta, pero ello NO es así:<br><br>
+                        • ❌ NO hay frustración<br>
+                        • ✅ Incurre en una <strong>tentativa punible</strong><br>
+                        • Respecto del delito frustrado, habría error de tipo al revés: impune a título de frustración
+                    </div>
+                </div>
+                
+                <h3 style="color: #2d3748; margin: 40px 0 20px 0;">2️⃣ Que el resultado NO se produzca, por causas ajenas a la voluntad del agente</h3>
+                
+                <div class="example-box">
+                    Ejemplo de causa ajena a la voluntad del agente: la eficaz intervención médica a la víctima de envenenamiento
+                </div>
+                
+                <div style="background: #fef3c7; padding: 20px; border-radius: 10px; margin: 20px 0; border-left: 5px solid #f59e0b;">
+                    <strong>⚠️ Si la consumación NO se verifica por causas DEPENDIENTES de la voluntad del agente:</strong>
+                    <ul style="margin-top: 15px;">
+                        <li>❌ NO existe frustración posible</li>
+                        <li>Falta un elemento del tipo objetivo de frustración</li>
+                        <li>✅ Sería <strong>tentativa desistida</strong></li>
+                    </ul>
+                </div>
+                
+                <div class="important-box" style="margin-top: 20px;">
+                    <strong>💡 Caso especial:</strong>
+                    <p style="margin-top: 10px;">Si realizados todos los actos ejecutivos, el sujeto se desiste y logra evitar el resultado → hay <span class="highlight">arrepentimiento eficaz</span></p>
+                </div>
+                
+                <h3 style="color: #2d3748; margin: 40px 0 20px 0;">Tipo Subjetivo</h3>
+                
+                <div class="important-box">
+                    <strong>El dolo de consumación:</strong>
+                    <p style="margin-top: 15px;">La frustración implica el conocimiento del riesgo inherente a la conducta típica.</p>
+                    <p style="margin-top: 10px;">El art. 7 inc 2° exige que el delincuente ponga de su parte todo lo necesario para que el crimen o simple delito se consume.</p>
+                    <p style="margin-top: 10px; color: #dc2626; font-weight: bold;">⚠️ Cuestión incompatible con el delito imprudente</p>
+                </div>
+            </div>
+
+            <!-- DELITO CONSUMADO -->
+            <div class="section">
+                <h2>El Delito Consumado</h2>
+                
+                <div class="important-box">
+                    <strong>📖 Concepto:</strong>
+                    <p style="margin-top: 10px;">Consiste en la <span class="highlight">realización del hecho</span>. El autor ha satisfecho <strong>íntegramente</strong>, desde un punto de vista objetivo y subjetivo, la descripción de la figura delictiva.</p>
+                </div>
+                
+                <div class="example-box">
+                    El homicidio se consuma con la <strong>muerte de la víctima</strong>
+                </div>
+                
+                <div style="background: #dbeafe; padding: 20px; border-radius: 10px; margin: 20px 0;">
+                    <p><strong>📌 Importante:</strong></p>
+                    <p style="margin-top: 10px;">La descripción típica y las sanciones aludidas en los delitos de la Parte Especial del CP, se refieren al <span class="highlight">autor de un delito consumado</span>.</p>
+                </div>
+                
+                <h3 style="color: #2d3748; margin: 30px 0 20px 0;">🔗 Relación entre consumación, tentativa y frustración</h3>
+                
+                <div style="background: #f7fafc; padding: 20px; border-radius: 10px; margin: 20px 0; border-left: 5px solid #667eea;">
+                    <p>La construcción de los tipos dependientes de <strong>tentativa</strong> y <strong>frustración</strong> se realiza interpretando:</p>
+                    <ul style="margin-top: 15px;">
+                        <li>El tipo autónomo de consumación de la Parte Especial (o de la ley penal extra CP)</li>
+                        <li>Los preceptos establecidos en el art. 7° inc. 2° o 3°</li>
+                    </ul>
+                    <p style="margin-top: 15px; color: #667eea; font-weight: bold;">→ La norma primaria puede surgir de la puesta en relación de varios enunciados legales</p>
+                </div>
+                
+                <h3 style="color: #2d3748; margin: 30px 0 20px 0;">⚖️ Ámbito de aplicación</h3>
+                
+                <div style="background: #d1fae5; padding: 20px; border-radius: 10px; margin: 20px 0;">
+                    <p><strong>Procede respecto de:</strong></p>
+                    <ul style="margin-top: 10px;">
+                        <li>✅ Crímenes</li>
+                        <li>✅ Simples delitos</li>
+                        <li>✅ <strong>Faltas</strong> (diferencia clave con tentativa y frustración)</li>
+                    </ul>
+                    <p style="margin-top: 15px; font-weight: bold;">Art. 9: Las faltas sólo se castigan cuando han sido consumadas</p>
+                </div>
+                
+                <h3 style="color: #2d3748; margin: 30px 0 20px 0;">💰 Penalidad</h3>
+                
+                <div class="law-article">
+                    <h4>Art. 50 del Código Penal</h4>
+                    <p style="margin-top: 10px;">A los autores de crimen o simple delito consumado se impondrá la <span class="highlight">pena que para éste se hallare señalada por la ley</span>.</p>
+                    <p style="margin-top: 15px; font-weight: bold; color: #1e40af;">Siempre que la ley designe la pena de un delito, se entiende que la impone al delito consumado.</p>
+                </div>
+                
+                <div style="background: #fef3c7; padding: 20px; border-radius: 10px; margin: 20px 0;">
+                    <strong>Faltas:</strong>
+                    <ul style="margin-top: 10px;">
+                        <li>Libro tercero del CP: arts. 494 y ss.</li>
+                        <li><strong>Regla general:</strong> pena de multa</li>
+                        <li><strong>Excepción:</strong> 494 bis del CP</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- DESISTIMIENTO -->
+            <div class="section">
+                <h2>El Desistimiento</h2>
+                
+                <div style="background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%); padding: 30px; border-radius: 15px; color: white; margin: 30px 0;">
+                    <h3 style="color: white; margin-bottom: 20px; font-size: 1.5em; text-align: center;">🔄 CONCEPTO DE DESISTIMIENTO</h3>
+                    
+                    <div style="background: rgba(255,255,255,0.95); padding: 25px; border-radius: 10px; color: #2d3748;">
+                        <p style="font-size: 1.1em; text-align: center; margin-bottom: 20px;"><strong>Consiste en evitar voluntariamente la consumación del delito</strong>, ya sea:</p>
+                        
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px;">
+                            <div style="background: #dbeafe; padding: 20px; border-radius: 10px; border-left: 4px solid #3b82f6;">
+                                <h4 style="color: #1e40af; margin-bottom: 10px;">• Desistiendo de realizar los actos que queden</h4>
+                                <p style="font-size: 0.95em; color: #1e3a8a;">(en la <strong>tentativa</strong>)</p>
+                            </div>
+                            
+                            <div style="background: #fef3c7; padding: 20px; border-radius: 10px; border-left: 4px solid #f59e0b;">
+                                <h4 style="color: #92400e; margin-bottom: 10px;">• Impidiendo el resultado</h4>
+                                <p style="font-size: 0.95em; color: #78350f;">tras haber realizado todos los actos ejecutivos (en la <strong>frustración</strong>)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <h3 style="color: #2d3748; margin: 30px 0 20px 0;">📋 Clasificación del Desistimiento</h3>
+                
+                <div style="background: #dbeafe; padding: 25px; border-radius: 10px; margin: 20px 0; border-left: 5px solid #3b82f6;">
+                    <h4 style="color: #1e40af; margin-bottom: 15px;">1️⃣ DESISTIMIENTO PASIVO</h4>
+                    <p><strong>Consiste en:</strong> Frenar la ejecución del delito</p>
+                    <p style="margin-top: 10px;"><strong>Momento:</strong> Durante la tentativa</p>
+                    
+                    <div style="background: white; padding: 20px; border-radius: 10px; margin-top: 20px;">
+                        <table style="width: 100%; border-collapse: collapse;">
+                            <tr style="background: #f0f9ff;">
+                                <td style="padding: 15px; border: 2px solid #3b82f6; text-align: center;">
+                                    <strong style="color: #1e40af;">Actos ejecutivos</strong>
+                                </td>
+                                <td style="padding: 15px; border: 2px solid #3b82f6; text-align: center; background: #bfdbfe;">
+                                    <strong style="color: #1e40af;">Conducta típica<br>DESISTIMIENTO</strong>
+                                </td>
+                            </tr>
+                        </table>
+                        <p style="text-align: center; margin-top: 10px; font-style: italic; color: #3b82f6;">El autor deja de hacer lo que le quedaba por hacer</p>
+                    </div>
+                    
+                    <div class="example-box" style="margin-top: 20px;">
+                        Juan apunta con su pistola a Pedro, pero se arrepiente y baja el arma sin disparar
+                    </div>
+                </div>
+                
+                <div style="background: #fef3c7; padding: 25px; border-radius: 10px; margin: 20px 0; border-left: 5px solid #f59e0b;">
+                    <h4 style="color: #92400e; margin-bottom: 15px;">2️⃣ DESISTIMIENTO ACTIVO o ARREPENTIMIENTO EFICAZ</h4>
+                    <p><strong>Consiste en:</strong> Realizar una conducta que <strong>impide el resultado</strong>, luego de haber concluido la ejecución del delito</p>
+                    <p style="margin-top: 10px;"><strong>Momento:</strong> Después de completar todos los actos ejecutivos (frustración)</p>
+                    
+                    <div style="background: white; padding: 20px; border-radius: 10px; margin-top: 20px;">
+                        <table style="width: 100%; border-collapse: collapse;">
+                            <tr style="background: #fffbeb;">
+                                <td style="padding: 15px; border: 2px solid #f59e0b; text-align: center;">
+                                    <strong style="color: #92400e;">Actos ejecutivos</strong>
+                                </td>
+                                <td style="padding: 15px; border: 2px solid #f59e0b; text-align: center;">
+                                    <strong style="color: #92400e;">Conducta típica</strong>
+                                </td>
+                                <td style="padding: 15px; border: 2px solid #f59e0b; text-align: center; background: #fde68a;">
+                                    <strong style="color: #92400e;">Resultado<br>DESISTIMIENTO</strong>
+                                </td>
+                            </tr>
+                        </table>
+                        <p style="text-align: center; margin-top: 10px; font-style: italic; color: #f59e0b;">El autor hace algo positivo para evitar el resultado</p>
+                    </div>
+                    
+                    <div class="example-box" style="margin-top: 20px;">
+                        Juan envenenó a Pedro (ya completó todos los actos), pero se arrepiente y lo lleva al hospital donde le administran el antídoto y lo salvan
+                    </div>
+                </div><h3 style="color: #2d3748; margin: 40px 0 20px 0;">⚖️ Fundamento Legal del Desistimiento Voluntario</h3>
+                
+                <div class="law-article">
+                    <p>Se encuentra en la definición del delito frustrado contenida en el <strong>inciso 2° del art. 7</strong></p>
+                    <p style="margin-top: 15px; font-size: 1.1em; color: #1e40af;">Si la consumación del delito <span class="highlight">NO se verifica por causas dependientes de la voluntad del autor</span> → NO existe delito frustrado ni responsabilidad penal</p>
+                    <p style="margin-top: 10px; font-style: italic;">Salvo que los actos que el sujeto alcanzó a realizar constituyan otro delito</p>
+                </div>
+                
+                <div class="important-box" style="margin-top: 20px;">
+                    <strong>💡 Lógica del desistimiento:</strong>
+                    <p style="margin-top: 10px;">Si esto es así en el delito frustrado, <span class="highlight">con mayor razón</span> es en la tentativa, porque en ella el sujeto se detiene por su propia iniciativa cuando ni siquiera ha ejecutado todos los actos necesarios para completar la conducta típica.</p>
+                </div>
+                
+                <h3 style="color: #2d3748; margin: 40px 0 20px 0;">⚠️ Tentativa Calificada</h3>
+                
+                <div style="background: #fee2e2; padding: 20px; border-radius: 10px; margin: 20px 0; border-left: 5px solid #dc2626;">
+                    <strong style="color: #dc2626;">IMPORTANTE:</strong>
+                    <p style="margin-top: 15px;">Si pese al desistimiento, el agente alcanzó a realizar actos que <strong>por sí mismos configuran un hecho punible</strong>, deben ser sancionados a ese título.</p>
+                    <p style="margin-top: 10px;">La impunidad <span class="highlight">NO se extiende</span> a los hechos constitutivos de delitos consumados subyacentes al delito desistido.</p>
+                </div>
+                
+                <div class="example-box">
+                    <strong>Ejemplo 1:</strong><br>
+                    A intenta robar, ingresa a la casa por la ventana fracturándola y luego se desiste.<br><br>
+                    • ✅ NO será sancionado por tentativa de robo (desistimiento)<br>
+                    • ❌ SÍ será sancionado por:<br>
+                    &nbsp;&nbsp;&nbsp;- Violación de morada<br>
+                    &nbsp;&nbsp;&nbsp;- Daños que ocasionó
+                </div>
+                
+                <div class="example-box">
+                    <strong>Ejemplo 2:</strong><br>
+                    El desistimiento de la violación NO obsta a la punibilidad de las lesiones corporales causadas a la víctima para vencer su resistencia.
+                </div>
+                
+                <div class="example-box">
+                    <strong>Ejemplo 3:</strong><br>
+                    El que se desiste del homicidio NO se libera de la pena por posesión ilegal del arma de fuego con que intentaba ultimar a su víctima.
+                </div>
+            </div>
+
+            <!-- RESUMEN COMPARATIVO FINAL -->
+            <div class="section">
+                <h2>📊 Cuadro Resumen Comparativo</h2>
+                
+                <table class="penalty-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 25%;">ETAPA</th>
+                            <th style="width: 35%;">CARACTERÍSTICAS</th>
+                            <th style="width: 40%;">PENALIDAD (AUTOR)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>TENTATIVA</strong></td>
+                            <td>
+                                • Principio de ejecución<br>
+                                • Faltan actos para completar<br>
+                                • Por hechos directos
+                            </td>
+                            <td><span class="highlight">-2 grados</span> de la pena del delito consumado</td>
+                        </tr>
+                        <tr>
+                            <td><strong>FRUSTRACIÓN</strong></td>
+                            <td>
+                                • Todos los actos ejecutados<br>
+                                • NO se produce resultado<br>
+                                • Por causas ajenas
+                            </td>
+                            <td><span class="highlight">-1 grado</span> de la pena del delito consumado</td>
+                        </tr>
+                        <tr>
+                            <td><strong>CONSUMACIÓN</strong></td>
+                            <td>
+                                • Realización completa<br>
+                                • Se produce el resultado<br>
+                                • Todos los elementos típicos
+                            </td>
+                            <td><span class="highlight">Pena señalada por la ley</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>AGOTAMIENTO</strong></td>
+                            <td>
+                                • Posterior a consumación<br>
+                                • Logro del propósito ulterior
+                            </td>
+                            <td>No modifica la pena</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- MENSAJE FINAL -->
+            <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 40px; border-radius: 15px; text-align: center; color: white; margin-top: 40px;">
+                <h2 style="color: white; margin-bottom: 20px;">✨ ¡Resumen Completado! ✨</h2>
+                <p style="font-size: 1.2em; margin-bottom: 15px;">Has terminado de revisar los conceptos de Actos Ejecutivos y Tentativa</p>
+                <p style="font-size: 1em; opacity: 0.9;">Recuerda repasar los ejemplos y casos prácticos para una mejor comprensión</p>
+                <div style="margin-top: 30px; padding: 20px; background: rgba(255,255,255,0.2); border-radius: 10px;">
+                    <p style="font-size: 0.9em;">💪 ¡Mucho éxito en tus estudios de Derecho Penal!</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <footer style="text-align: center; padding: 30px; color: white; font-size: 0.9em;">
+        <p>📚 Material de estudio - Derecho Penal II</p>
+        <p style="margin-top: 10px; opacity: 0.8;">Basado en apuntes del Profesor Mauricio Rettig</p>
+    </footer>
+</body>
+</html>
